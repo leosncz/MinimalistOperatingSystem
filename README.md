@@ -10,4 +10,4 @@ The first step is to compile the **bootloader**, you can do that with the follow
 nasm -f bin boot.txt -o boot.bin
 ```
 Now you have your compiled **bootloader** !</br>
-It loads the ***second sector** of the **USB** key (or **disk**).
+It loads the **second sector** of the **USB** key (or **disk**).
