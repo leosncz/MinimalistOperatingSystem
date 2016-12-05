@@ -1,2 +1,2 @@
-# MinOS Operating System
-MinOS is a minimalist OS (Operating System).</br>
+# MOS Operating System
+MOS (**Minimalist Operating System**) is a minimalist operating system.</br>
