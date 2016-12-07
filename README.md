@@ -5,5 +5,10 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
 MOS is the acronyme for **Minimalist Operating System**.</br>
 You can find all the **MOS** sources in this **repository**.</br>
 **MOS** is targeted to [x86 intel processors](https://en.wikipedia.org/wiki/X86).</br>
+# Advantages and Disadvantages
+**MOS**'s meaning is to be fully customizable, from the bootloader to the kernel.</br>
+You can modify **MOS** from itself or from the sources.</br>
+For the moment, **MOS** is designed for the developer, don't download this OS for your grandma.</br>
+There is currenty no OpenGL support, so forget (or develop) the 3D games.
 
 
