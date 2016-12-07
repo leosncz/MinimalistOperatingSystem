@@ -5,7 +5,7 @@ The reading of this [PDF](http://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lec
 # What is MOS ?
 MOS is the acronyme for **Minimalist Operating System**.</br>
 You can find all the **MOS** sources in this **repository**.</br>
-**MOS** is targeted to [x86 intel processors](https://en.wikipedia.org/wiki/X86).</br>
+**MOS** is targeted to [8086 family intel processors](https://en.wikipedia.org/wiki/Intel_8086).</br>
 # Advantages and Disadvantages
 **MOS**'s meaning is to be fully customizable, from the bootloader to the kernel.</br>
 You can modify **MOS** from itself or from the sources.</br>
