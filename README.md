@@ -9,6 +9,8 @@ You can find all the **MOS** sources in this **repository**.</br>
 **MOS**'s meaning is to be fully customizable, from the bootloader to the kernel.</br>
 You can modify **MOS** from itself or from the sources.</br>
 For the moment, **MOS** is designed for the developer, don't download this OS for your grandma.</br>
-There is currenty no OpenGL support, so forget (or develop?) the 3D games.
+There is currenty no OpenGL support, so forget (or develop?) the 3D games.</br>
+It's better to install **MOS** on a USB key (with sector size of 512 octets).
+
 
 
