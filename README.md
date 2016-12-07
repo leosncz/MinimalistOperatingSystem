@@ -12,6 +12,7 @@ For the moment, **MOS** is designed for the developer, don't download this OS fo
 There is currenty no OpenGL support, so forget (or develop?) the 3D games.</br>
 It's better to install **MOS** on a USB key (with sector size of 512 octets).</br>
 # How to modify MOS from the sources and build it
+## Example : the bootloader
 Download all the **bootloader** directory, modify it and build it with nasm.
 ```batch
 nasm.exe -f bin main.asm -o bootloader.bin
