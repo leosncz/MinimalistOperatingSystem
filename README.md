@@ -29,6 +29,12 @@ If you have to copy binary code on the third sector (for example), you must writ
 ```batch
 dd if=binaryCODE.bin of=f: count=1 bs=512 seek=2
 ```
-
-
-
+## Example : Compile the kernel and install it
+It's the same as the **bootloader**, download the **kernel** folder, modify it, compile the **kernelMain.asm** file.
+```batch
+nasm -f bin kernelMain.asm -o kernel.bin
+```
+Then you just need to install it on whatever you like, like the bootloader.
+```batch
+dd if=kernel.bin od=f: count=COUNT bs=512 seek=SECTOR_NUMBER
+```
