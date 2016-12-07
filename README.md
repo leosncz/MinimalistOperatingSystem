@@ -13,12 +13,13 @@ For the moment, **MOS** is designed for the developer, don't download this OS fo
 There is currenty no OpenGL support, so forget (or develop?) the 3D games.</br>
 It's better to install **MOS** on a USB key (with sector size of 512 octets).</br>
 # How to modify MOS from the sources and build it
-## Example : the bootloader
+## Example : Compile the bootloader
 Download all the **bootloader** directory, modify it and build it with nasm.
 ```batch
 nasm.exe -f bin main.asm -o bootloader.bin
 ```
-You now have your MOS bootloader compiled.</br></br>
+You now have your MOS bootloader compiled.
+## Example : Install the bootloader
 Now, let's say you want to copy the bootloader on a USB key :</br>
 With **ADMIN rights**, type in a console :
 ```batch
@@ -28,8 +29,6 @@ If you have to copy binary code on the third sector (for example), you must writ
 ```batch
 dd if=binaryCODE.bin of=f: count=1 bs=512 seek=2
 ```
-The included file(s) in **main.asm** must be in the same directory.</br>
-I suggest you to add nasm and dd to your **System PATH** environment variable.
 
 
 
