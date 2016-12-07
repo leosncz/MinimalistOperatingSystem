@@ -20,7 +20,7 @@ nasm.exe -f bin main.asm -o bootloader.bin
 ```
 You now have your MOS bootloader compiled.
 ## Example : Install the bootloader
-Now, let's say you want to copy the bootloader on a USB key :</br>
+Now, let's say you want to copy the bootloader on a USB key.</br>
 With **ADMIN rights**, type in a console :
 ```batch
 dd if=bootloader.bin of=f: count=1 bs=512 seek=0
