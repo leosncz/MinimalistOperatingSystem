@@ -18,8 +18,7 @@ Download all the **bootloader** directory, modify it and build it with nasm.
 ```batch
 nasm.exe -f bin main.asm -o bootloader.bin
 ```
-You now have your MOS bootloader compiled.</br>
-It's the same for everything else.</br></br>
+You now have your MOS bootloader compiled.</br></br>
 Now, let's say you want to copy the bootloader on a USB key :</br>
 With **ADMIN rights**, type in a console :
 ```batch
