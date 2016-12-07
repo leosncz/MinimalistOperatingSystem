@@ -19,14 +19,17 @@ nasm.exe -f bin main.asm -o bootloader.bin
 ```
 You now have your MOS bootloader compiled.</br>
 It's the same for everything else.</br>
-Example command using **dd** for installing a **bootloader** and a **second sector** on a USB key :</br>
+Now, let's say you want to copy the bootloader on a USB key :</br>
 With **ADMIN rights**, type in a console :
 ```batch
 dd if=bootloader.bin of=f: count=1 bs=512 seek=0
-dd if=secondSec.bin of=f: count=1 bs=512 seek=1
+```
+If you have to copy binary code on the third sector, you must write :
+```batch
+dd if=binaryCODE.bin of=f: count=1 bs=512 seek=2
 ```
 The included file(s) in **main.asm** must be in the same directory.</br>
-I suggest you to add nasm and dd to your **system PATH** environment variable.
+I suggest you to add nasm and dd to your **System PATH** environment variable.
 
 
 
