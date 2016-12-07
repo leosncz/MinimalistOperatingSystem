@@ -24,7 +24,7 @@ With **ADMIN rights**, type in a console :
 ```batch
 dd if=bootloader.bin of=f: count=1 bs=512 seek=0
 ```
-If you have to copy binary code on the third sector, you must write :
+If you have to copy binary code on the third sector (for example), you must write :
 ```batch
 dd if=binaryCODE.bin of=f: count=1 bs=512 seek=2
 ```
