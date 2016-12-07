@@ -25,7 +25,7 @@ With **ADMIN rights**, type in a console :
 dd if=bootloader.bin of=f: count=1 bs=512 seek=0
 dd if=secondSec.bin of=f: count=1 bs=512 seek=1
 ```
-The included file in **main.asm** must be in the same directory.</br>
+The included file(s) in **main.asm** must be in the same directory.</br>
 I suggest you to add nasm and dd to your **system PATH** environment variable.
 
 
