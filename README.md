@@ -20,5 +20,5 @@ You can compile it with the following command :
 nasm -f bin mainBootloader.asm -o BOOTLOADER.COMPILED
 ```
 You now have your **bootloader** compiled.</br>
-It's the same for the kernel, compile the **mainKernel.asm** file.
+It's the same for the kernel, just compile the **mainKernel.asm** file.
 
