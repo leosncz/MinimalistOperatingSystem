@@ -13,28 +13,11 @@ For the moment, **MOS** is designed for the developer, don't download this OS fo
 There is currenty no OpenGL support, so forget (or develop?) the 3D games.</br>
 It's better to install **MOS** on a USB key (with sector size of 512 octets).</br>
 # How to modify MOS from the sources and build it
-## Example : Compile the bootloader
-Download all the **bootloader** directory, modify it and build it with nasm.
-```batch
-nasm.exe -f bin main.asm -o bootloader.bin
+There is two separate part, the **bootloader** main file and the **bootloader** main file.</br>
+The **bootloader** main file is called **mainBootloader.asm** and is located in the bootloader folder.</br>
+You can compile it with the following command :
+```bat
+nasm -f bin mainBootloader.asm -o BOOTLOADER.COMPILED
 ```
-You now have your MOS bootloader compiled.
-## Example : Install the bootloader
-Now, let's say you want to copy the bootloader on a USB key.</br>
-With **ADMIN rights**, type in a console :
-```batch
-dd if=bootloader.bin of=f: count=1 bs=512 seek=0
-```
-If you have to copy binary code on the third sector (for example), you must write :
-```batch
-dd if=binaryCODE.bin of=f: count=1 bs=512 seek=2
-```
-## Example : Compile the kernel and install it
-It's the same as the **bootloader**, download the **kernel** folder, modify it, compile the **kernelMain.asm** file.
-```batch
-nasm -f bin kernelMain.asm -o kernel.bin
-```
-Then you just need to install it on whatever you like, like the bootloader.
-```batch
-dd if=kernel.bin od=f: count=COUNT bs=512 seek=SECTOR_NUMBER
-```
+You now have your **bootloader** compiled.</br>
+
