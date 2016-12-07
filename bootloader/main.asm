@@ -1,4 +1,5 @@
 ; Bootloader of MOS Operating System.
+; Check the license at GitHub.com/leosncz/OperatingSystem/README.md
 ; NASM syntax.
 [org 0x7C00]
 jmp main
