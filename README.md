@@ -20,7 +20,7 @@ nasm.exe -f bin main.asm -o bootloader.bin
 You now have your MOS bootloader compiled.</br>
 It's the same for everything else.</br>
 Example command using **dd** for installing a **bootloader** and a **second sector** on a USB key :</br>
-With **ADMIN rights**, type in a console the following :
+With **ADMIN rights**, type in a console :
 ```batch
 dd if=bootloader.bin of=f: count=1 bs=512 seek=0
 dd if=secondSec.bin of=f: count=1 bs=512 seek=1
