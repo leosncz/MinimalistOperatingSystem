@@ -4,5 +4,6 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
 # What is MOS ?
 MOS is the acronyme for **Minimalist Operating System**.</br>
 You can find all the **MOS** sources in this **repository**.</br>
+**MOS** is targeted to [x86 intel processors](https://fr.wikipedia.org/wiki/X86#Architecture).</br>
 
 
