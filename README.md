@@ -15,3 +15,12 @@ To edit files and disks, i really like to use [DD](https://fr.wikipedia.org/wiki
 If you're under Windows, you can use [HxD editor](https://mh-nexus.de/en/hxd/), it's as powerfull as **DD**.</br>
 I used [nasm](http://www.nasm.us/) to produce binary code, all the assembler parts of **MOS** are written in **nasm** syntax.</br>
 To finish with, I also like [QEMU](http://wiki.qemu.org/Main_Page) to test binary codes.
+# Basic commands 
+Build with **nasm** : (must use **nasm** syntax)
+```batch
+nasm -f bin yourFile.asm -o binary_code
+```
+Copy bootloader with **dd** :
+```batch
+dd if=binary_code of=disk: count=1 bs=SECTOR_SIZE seek=0
+```
