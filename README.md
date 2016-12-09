@@ -12,13 +12,3 @@ You can modify **MOS** from itself or from the sources.</br>
 For the moment, **MOS** is designed for the developer, don't download this OS for your grandma.</br>
 There is currenty no OpenGL support, so forget (or develop?) it.</br>
 It's better to install **MOS** on a USB key (with sector size of 512 octets).</br>
-# How to modify MOS from the sources and build it
-There is two separate part, the **bootloader** main file and the **kernel** main file.</br>
-The **bootloader** main file is called **mainBootloader.asm** and is located in the bootloader folder.</br>
-You can compile it with the following command :
-```bat
-nasm -f bin mainBootloader.asm -o BOOTLOADER.COMPILED
-```
-You now have your **bootloader** compiled.</br>
-It's the same for the kernel, just compile the **mainKernel.asm** file.
-
