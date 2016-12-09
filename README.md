@@ -12,4 +12,5 @@ You can modify **MOS** from itself or from the sources.</br>
 For the moment, **MOS** is designed for the developer, don't download this OS for your grandma.</br>
 There is currenty no OpenGL support, so forget (or develop?) it.</br>
 # Tools
-To edit files and disks, i really like to use [DD](https://fr.wikipedia.org/wiki/Dd_(Unix)), it's powerfull.
+To edit files and disks, i really like to use [DD](https://fr.wikipedia.org/wiki/Dd_(Unix)), it's powerfull.</br>
+If you're under Windows, you can use |HxD editor](https://mh-nexus.de/en/hxd/), it's as powerfull as **DD**.
