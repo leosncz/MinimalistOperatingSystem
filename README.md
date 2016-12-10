@@ -7,9 +7,9 @@ MOS is the acronyme for **Minimalist Operating System**.</br>
 You can find all the **MOS** sources in this **repository**.</br>
 **MOS** is targeted to [8086 family intel processors](https://en.wikipedia.org/wiki/Intel_8086).</br>
 # Advantages and Disadvantages
-* **MOS**'s meaning is to be fully customizable, from the bootloader to the kernel.</br>
-* You can modify **MOS** from itself or from the sources.</br>
-* For the moment, **MOS** is designed for the developer, don't download this OS for your grandma.</br>
+1. **MOS**'s meaning is to be fully customizable, from the bootloader to the kernel.</br>
+2. You can modify **MOS** from itself or from the sources.</br>
+3. For the moment, **MOS** is designed for the developer, don't download this OS for your grandma.</br>
 # Tools
 To edit files and disks, i really like to use [DD](https://fr.wikipedia.org/wiki/Dd_(Unix)), it's powerfull.</br>
 If you're under Windows, you can use [HxD editor](https://mh-nexus.de/en/hxd/), it's as powerfull as **DD**.</br>
