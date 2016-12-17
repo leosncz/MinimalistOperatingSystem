@@ -2,7 +2,6 @@
 ; Check the license at GitHub.com/leosncz/OperatingSystem/
 ; NASM syntax.
 [org 0x1000]
-
 jmp main
 %include "resources.asm"
 main:
