@@ -3,7 +3,7 @@
 ; NASM syntax.
 [org 0x1000]
 jmp main
-%include "resources.asm"
+%include "resources.asm" ; This is the same file as in the mainBootloader.asm file.
 main:
 mov si, loadedMSG
 call printIntPrepareNL
