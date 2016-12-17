@@ -1,4 +1,4 @@
-; Real Mode "globals" functions of MOS Operating System.
+; Real Mode datas of MOS Operating System.
 ; Check the license at GitHub.com/leosncz/OperatingSystem/
 ; NASM syntax.
 
