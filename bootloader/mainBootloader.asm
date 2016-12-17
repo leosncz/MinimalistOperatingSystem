@@ -20,5 +20,4 @@ mov si, text2
 call printInt
 jmp $ ;Loop.
 times 510 - ($-$$) db 0 ; Must be 512 size.
-db 0x55 ; Magical Number.
-db 0xAA ; Magical Number.
+dw 0xAA55
