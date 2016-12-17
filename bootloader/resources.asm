@@ -13,7 +13,7 @@ printInt: ; Print the SI register to the screen.
 mov ah, 0x2
 mov bh, 0x0
 int 0x10
-mov bl, 0100b ; Binary expressed color of the text.
+mov bl, 0010b ; Binary expressed color of the text.
 mov cx, 1d;
 mov ah, 0x9
 mov al, [si]
