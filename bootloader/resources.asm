@@ -18,12 +18,12 @@ mov cx, 1d;
 mov ah, 0x9
 mov al, [si]
 cmp al, 0
-je finPrintInt
+je endPrintInt
 int 0x10
 inc si
 inc dl ; Add a row.
 jmp printInt
-finPrintInt:
+endPrintInt:
 ret
 
 printIntPrepareNL: ; Add new line.
