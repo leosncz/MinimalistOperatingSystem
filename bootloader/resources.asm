@@ -1,16 +1,36 @@
 ; Real Mode "globals" functions of MOS Operating System.
 ; Check the license at GitHub.com/leosncz/OperatingSystem/
 ; NASM syntax.
+
+; Functions :
+init:
+mov [bootDriveNumber], dl ; Save boot drive number id.
+xor ax, ax
+mov dx, ax
+ret
+
 printInt: ; Print the SI register to the screen.
-push ax ; Save ax so it is preserved.
-printInt2:
-mov ah, 0x0E
+mov ah, 0x2
+mov bh, 0x0
+int 0x10
+mov bl, 0100b
+mov cx, 1d;
+mov ah, 0x9
 mov al, [si]
 cmp al, 0
 je finPrintInt
 int 0x10
 inc si
-jmp printInt2
+inc dl ; Add a row.
+jmp printInt
 finPrintInt:
-pop ax
 ret
+
+printIntPrepareNL: ; Add new line.
+inc dh
+mov dl, 0d
+ret
+
+; Text :
+bootDriveNumber: db 0d ; Boot drive number ID.
+text1: db "MOS Bootloader loaded !", 0
