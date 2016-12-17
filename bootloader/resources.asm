@@ -31,6 +31,6 @@ inc dh
 mov dl, 0d
 ret
 
-; Text :
+; Datas :
 bootDriveNumber: db 0d ; Boot drive number ID.
-text1: db "MOS Bootloader loaded !", 0
+text1: db "MOS Bootloader loaded at 0x0:0x7C00", 0
