@@ -13,7 +13,7 @@ printInt: ; Print the SI register to the screen.
 mov ah, 0x2
 mov bh, 0x0
 int 0x10
-mov bl, 0100b
+mov bl, 0100b ; Binary expressed color of the text.
 mov cx, 1d;
 mov ah, 0x9
 mov al, [si]
@@ -33,4 +33,5 @@ ret
 
 ; Datas :
 bootDriveNumber: db 0d ; Boot drive number ID.
-text1: db "MOS Bootloader loaded at 0x0:0x7C00", 0
+text1: db "Minimalist Operating System (MOS) ALPHA bootloader", 0
+text2: db "Jumping into hyperspace (PMode in fact ...)", 0
