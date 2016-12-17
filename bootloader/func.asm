@@ -1,3 +1,6 @@
+; Real Mode "globals" functions of MOS Operating System.
+; Check the license at GitHub.com/leosncz/OperatingSystem/
+; NASM syntax.
 printInt: ; Print the SI register to the screen.
 push ax ; Save ax so it is preserved.
 printInt2:
