@@ -8,7 +8,7 @@ mov ds, ax
 mov es, ax
 mov ss, ax
 mov bp, ax
-mov ax, 0x9fc00 ; Stack --> 0x0:0x9fc00
+mov ax, 0x7C00 ; Stack --> 0x0:0x7C00
 mov sp, ax
 jmp main
 %include "resources.asm" ; Contains usefull datas.
