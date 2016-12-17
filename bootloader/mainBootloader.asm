@@ -13,6 +13,12 @@ mov sp, ax
 jmp main
 %include "resources.asm" ; Contains usefull datas.
 main:
+call init ; Init resources.asm functions.
+mov si, text1
+call printInt
+call printIntPrepareNL
+mov si, text2
+call printInt
 jmp $ ;Loop.
 times 510 - ($-$$) db 0 ; Must be 512 size.
 db 0x55 ; Magical Number.
