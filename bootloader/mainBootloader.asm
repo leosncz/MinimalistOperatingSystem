@@ -1,7 +1,6 @@
 ; Bootloader of MOS Operating System.
 ; Check the license at GitHub.com/leosncz/OperatingSystem/
 ; NASM syntax.
-; This code loads in memory the second and third sectors at 0x0:0x1000 (real mode addressing).
 [org 0x7C00]
 xor ax, ax
 mov ds, ax
