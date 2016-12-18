@@ -1,7 +1,5 @@
 ; PMode resources of MOS Operating System.
-
 ; Check the license at GitHub.com/leosncz/OperatingSystem/
-
 ; NASM syntax.
 
 writeCharacterToVideoMemoryFunc: ; al=character ah=attributes cx=offset(byte)
