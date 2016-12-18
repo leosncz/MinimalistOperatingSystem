@@ -1,12 +1,7 @@
 ; Second Stage Bootloader of MOS Operating System.
-
 ; Check the license at GitHub.com/leosncz/OperatingSystem/
-
 ; NASM syntax.
-
-
 [org 0x1000]
-
 jmp main
 %include "resources.asm" ; Same "resources.asm" file as in the bootloader directory.
 %include "gdtResources.asm" ; Contains usefull gdt datas.
