@@ -25,7 +25,7 @@ db 0x0 ; Base ( bits 16 -23)
 db 10010010b ; 1st flags , type flags
 db 11001111b ; 2nd flags , Limit ( bits 16 -19)
 db 0x0 ; Base ( bits 24 -31)
-gdt_end: ; The reason for putting a label at the end of the
+gdt_end:
 gdt_descriptor :
 dw gdt_end - gdt_start - 1 ; Size of our GDT , always less one
 dd gdt_start ; Start address of our GDT
