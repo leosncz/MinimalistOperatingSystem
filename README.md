@@ -24,3 +24,5 @@ Copy bootloader with **dd** :
 ```batch
 dd if=binary_code of=disk: count=1 bs=SECTOR_SIZE seek=0
 ```
+# Contact
+If you want to contact me (I don't know why, but If you really want to ...), contact me at **theleosa99.officiel@gmail.com**
