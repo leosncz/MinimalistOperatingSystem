@@ -1,9 +1,6 @@
 ; GDT things of MOS Operating System.
-
 ; Check the license at GitHub.com/leosncz/OperatingSystem/
-
 ; NASM syntax.
-
 gdt_start:
 gdt_null: 
 dd 0x0 
@@ -33,11 +30,12 @@ gdt_descriptor :
 dw gdt_end - gdt_start - 1 ; Size of our GDT , always less one
 dd gdt_start ; Start address of our GDT
 CODE_SEG equ gdt_code - gdt_start
-DATA_SEG equ gdt_data - gdt_start
+DATA_SEG equ gdt_data - gdt_start
+
 setupGDT:
 cli ; Clear ints.
 lgdt [gdt_descriptor]
 mov eax, cr0 ; To make the switch to protected mode , we set
 or eax, 0x1 ; the first bit of CR0 , a control register
-mov cr0, eax ; Update the control register
+mov cr0, eax ; Update the control register
 ret
