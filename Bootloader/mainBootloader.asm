@@ -18,7 +18,7 @@ call printInt
 call printIntPrepareNL
 mov si, text2
 call printInt
-call load2nd3rdSector
+call load2nd
 jmp 0x0:0x500 ; Jump to 2nd Bootloader.
 times 510 - ($-$$) db 0 ; Must be 512 size.
 dw 0xAA55 ; Magical number.
