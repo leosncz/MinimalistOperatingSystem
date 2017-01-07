@@ -1,6 +1,8 @@
-# This code builds the file "kernel.c" and converts it into a raw binary code.
-gcc -ffreestanding -c kernel.c -o kernel.o
-ld -T NUL -o kernel.tmp -Ttext 0x7e00 kernel.o
-objcopy -O binary -j .text  kernel.tmp kernel.bin
-del kernel.o
-del kernel.tmp
+nasm kernel_entry.asm -f elf -o kernel_entry.o
+gcc -ffreestanding -c kernel32.c -o kernel32.o
+ld -T NUL -o kernel32.tmp -Ttext 0x7e00 kernel_entry.o kernel32.o
+objcopy -O binary -j .text  kernel32.tmp kernel32.bin
+del kernel32.tmp
+del kernel32.o
+del kernel_entry.o
+pause
