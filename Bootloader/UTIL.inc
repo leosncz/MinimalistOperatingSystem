@@ -39,7 +39,7 @@ mov dl, [bootDriveNumber]
 mov ah, 0x0
 int 0x13
 mov ah, 0x2
-mov al, 200d ; Read 200 sectors (you can change it to a higher number, not a lower).
+mov al, 3d ; Read 3 sectors (you can change it to a higher number, not a lower).
 mov ch, 0x0
 mov cl, 2d ; Load from second sector.
 mov dh, 0x0
