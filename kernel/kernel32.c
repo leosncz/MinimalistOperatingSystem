@@ -12,6 +12,6 @@ void kmain() // Kernel's main entry point.
 	char string2[32] = "MOS is waiting for something ...";
 	clearScreen();
 	printGreenString(0,0,string1,21);
-	printGreenString(0,1,string2,32);	
+	printWhiteString(0,1,string2,32);	
 	while(1){}; // Infinite loop.
 }
