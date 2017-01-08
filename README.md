@@ -22,7 +22,7 @@ nasm -f bin yourFile.asm -o binary_code
 ```
 Copy bootloader with **dd** :
 ```batch
-dd if=binary_code of=disk: count=1 bs=SECTOR_SIZE seek=0
+dd if=binary_code of=disk: count=1 bs=512 seek=0
 ```
 The **count** and **bs** parameters may vary.
 # Contact
