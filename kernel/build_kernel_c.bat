@@ -1,4 +1,4 @@
-:: This code builds and links everything for you, yes it's so cool.
+:: This code builds and links everythings for you, yes it's so cool.
 nasm kernel_entry.asm -f elf -o kernel_entry.o
 gcc -ffreestanding -c kernel32.c -o kernel32.o
 ld -T NUL -o kernel32.tmp -Ttext 0x7e00 kernel_entry.o kernel32.o
