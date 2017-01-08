@@ -7,4 +7,5 @@ objcopy -O binary -j .text  kernel32.tmp kernel32.bin
 del kernel32.tmp
 del kernel32.o
 del kernel_entry.o
-pause :: To see if it worked.
+:: Pause to see if it worked.
+pause
