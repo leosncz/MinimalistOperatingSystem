@@ -1,5 +1,4 @@
 ; Usefull things of MOS Operating System.
-; Check the license at GitHub.com/leosncz/OperatingSystem/
 ; NASM syntax.
 init:
 mov [bootDriveNumber], dl ; Save boot drive number id.
