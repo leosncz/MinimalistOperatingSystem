@@ -5,7 +5,6 @@ Purpose:
 This file contains datas and functions the kernel might uses.
 */
 #define RAMSCREEN 0xB8000 // Video address.
-#define MOS_KERNEL_VERSION 0x31 // Actual MOS's kernel version (1.0).
 
 void printWhiteCharacter(char colX, char rowY, char characterToPrint) // It prints a white character at I(colX;rowY).
 {
