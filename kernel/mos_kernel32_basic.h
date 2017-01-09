@@ -69,7 +69,7 @@ void clearScreen() // It clears the screen.
 	unsigned int i=0;
 	while(i < (80*25*2))
 	{
-		video[i]=' ';
+		video[i]=' '; // Nothing (space).
 		i++;
 		video[i]=0xF; // White on black attribute.
 		i++;
