@@ -28,6 +28,7 @@ The **count** and **bs** parameters may vary.
 # File encoding
 **NASM** require **utf-8 without BOM**'s file encoding.
 # Version
-Currently, the **bootloader** and the **kernel** of **MOS** are in ALPHA.
+**Bootloader's** version is **ALPHA**.</br>
+**Kernel's** version is **1**.
 # Contact
 If you want to contact me (I don't know why, but If you really want to ...), contact me at **theleosa99.officiel@gmail.com**
