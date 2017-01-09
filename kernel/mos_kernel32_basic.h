@@ -5,7 +5,6 @@ Purpose:
 This file contains datas and functions the kernel might uses.
 */
 #define RAMSCREEN 0xB8000 // Video address.
-
 void printWhiteCharacter(char colX, char rowY, char characterToPrint) // It prints a white character at I(colX;rowY).
 {
 	unsigned char *video = (unsigned char*)RAMSCREEN+2*(rowY*80+colX);
