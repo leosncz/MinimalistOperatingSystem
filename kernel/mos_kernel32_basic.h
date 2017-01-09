@@ -5,6 +5,7 @@ Purpose:
 This file contains datas and functions the kernel might uses.
 */
 #define RAMSCREEN 0xB8000 // Video address.
+#define MOS_KERNEL_VERSION "1.0"
 void printWhiteCharacter(char colX, char rowY, char characterToPrint) // It prints a white character at I(colX;rowY).
 {
 	unsigned char *video = (unsigned char*)RAMSCREEN+2*(rowY*80+colX);
@@ -29,7 +30,7 @@ void printGreenCharacter(char colX, char rowY, char characterToPrint) // It prin
 	*video=0xA; // Green on black attribute.
 }
 
-void printGreenString(char colX, char rowY, char string[],int size) // It prints a green string.
+void kernelOutputGreenString(char colX, char rowY, char string[],int size) // It prints a green string.
 {
 	char colX_ = colX;
 	char rowY_ = rowY;
@@ -40,7 +41,7 @@ void printGreenString(char colX, char rowY, char string[],int size) // It prints
 	}
 }
 
-void printWhiteString(char colX, char rowY, char string[],int size) // It prints a white string.
+void kernelOutputWhiteString(char colX, char rowY, char string[],int size) // It prints a white string.
 {
 	char colX_ = colX;
 	char rowY_ = rowY;
@@ -51,7 +52,7 @@ void printWhiteString(char colX, char rowY, char string[],int size) // It prints
 	}
 }
 
-void printRedString(char colX, char rowY, char string[],int size) // It prints a red string.
+void kernelOutputRedString(char colX, char rowY, char string[],int size) // It prints a red string.
 {
 	char colX_ = colX;
 	char rowY_ = rowY;
