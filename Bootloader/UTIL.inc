@@ -50,7 +50,7 @@ ret
 
 bootDriveNumber: db 0d ; Boot drive number ID.
 text1: db "Minimalist Operating System (MOS) ALPHA bootloader", 0
-text2: db "Jumping into hyperspace (PMode in fact ...)", 0
+text2: db "Setting up GDT and PMode ...", 0
 text3: db "GDT and PMode enabled !", 0
 
 gdt_start:
