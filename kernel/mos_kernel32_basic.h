@@ -6,7 +6,7 @@ This file contains datas and functions the kernel might uses.
 */
 #define RAMSCREEN 0xB8000 // Video address.
 #define MOS_KERNEL_VERSION "1.0"
-void printWhiteCharacter(char colX, char rowY, char characterToPrint) // It prints a white character at I(colX;rowY).
+void kernelOutputWhiteCharacter(char colX, char rowY, char characterToPrint) // It prints a white character at I(colX;rowY).
 {
 	unsigned char *video = (unsigned char*)RAMSCREEN+2*(rowY*80+colX);
 	*video=characterToPrint;
@@ -14,7 +14,7 @@ void printWhiteCharacter(char colX, char rowY, char characterToPrint) // It prin
 	*video=0xF; // White on black attribute.
 }
 
-void printRedCharacter(char colX, char rowY, char characterToPrint) // It prints a red character at I(colX;rowY).
+void kernelOutputRedCharacter(char colX, char rowY, char characterToPrint) // It prints a red character at I(colX;rowY).
 {
 	unsigned char *video = (unsigned char*)RAMSCREEN+2*(rowY*80+colX);
 	*video=characterToPrint;
@@ -22,7 +22,7 @@ void printRedCharacter(char colX, char rowY, char characterToPrint) // It prints
 	*video=0xC; // Red on black attribute.
 }
 
-void printGreenCharacter(char colX, char rowY, char characterToPrint) // It prints a green character at I(colX;rowY).
+void kernelOutputGreenCharacter(char colX, char rowY, char characterToPrint) // It prints a green character at I(colX;rowY).
 {
 	unsigned char *video = (unsigned char*)RAMSCREEN+2*(rowY*80+colX);
 	*video=characterToPrint;
@@ -36,7 +36,7 @@ void kernelOutputGreenString(char colX, char rowY, char string[],int size) // It
 	char rowY_ = rowY;
 	for(int i=0;i<size;i++)
 	{
-		printGreenCharacter(colX_,rowY_,string[i]);
+		kernelOutputGreenCharacter(colX_,rowY_,string[i]);
 		colX_++;
 	}
 }
@@ -47,7 +47,7 @@ void kernelOutputWhiteString(char colX, char rowY, char string[],int size) // It
 	char rowY_ = rowY;
 	for(int i=0;i<size;i++)
 	{
-		printWhiteCharacter(colX_,rowY_,string[i]);
+		kernelOutputWhiteCharacter(colX_,rowY_,string[i]);
 		colX_++;
 	}
 }
@@ -58,7 +58,7 @@ void kernelOutputRedString(char colX, char rowY, char string[],int size) // It p
 	char rowY_ = rowY;
 	for(int i=0;i<size;i++)
 	{
-		printRedCharacter(colX_,rowY_,string[i]);
+		kernelOutputRedCharacter(colX_,rowY_,string[i]);
 		colX_++;
 	}
 }
