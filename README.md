@@ -29,7 +29,7 @@ The **count** and **bs** parameters may vary.
 # File encoding
 **NASM** require **utf-8 without BOM**'s file encoding.
 # Version
-**Bootloader's** version is **ALPHA**.</br>
-**Kernel's** version is **1**.
+**Bootloader : ALPHA**.</br>
+**Kernel : ALPHA**
 # Contact
 If you want to contact me (I don't know why, but If you really want to ...), contact me at **theleosa99.officiel@gmail.com**
