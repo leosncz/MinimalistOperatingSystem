@@ -1,4 +1,4 @@
-; Usefull things of MOS Operating System.
+; Usefull datas of MOS Operating System.
 ; NASM syntax.
 init:
 mov [bootDriveNumber], dl ; Save boot drive number id.
@@ -49,7 +49,7 @@ pop ax
 ret
 
 bootDriveNumber: db 0d ; Boot drive number ID.
-text1: db "Minimalist Operating System (MOS) ALPHA bootloader", 0
+text1: db "Minimalist Operating System (MOS) ALPHA BOOTLOADER", 0
 text2: db "Setting up GDT and PMode ...", 0
 text3: db "GDT and PMode enabled !", 0
 
