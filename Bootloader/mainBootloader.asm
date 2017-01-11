@@ -33,6 +33,6 @@ mov es , ax
 mov ebp , 0x90000 ; Update our stack position so it is right
 mov esp , ebp ; at the top of the free space.
 call 0x8:0x7e00 ; Jump to the kernel
-jmp $  ; Hang
+jmp $  ; If MOS's kernel give back the control, it won't break anything.
 times 510 - ($-$$) db 0 ; Must be 512 size.
 dw 0xAA55 ; Magical number.
