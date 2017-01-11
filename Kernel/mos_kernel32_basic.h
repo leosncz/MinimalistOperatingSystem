@@ -75,11 +75,3 @@ void clearScreen() // It clears the screen.
 		i++;
 	}
 }
-
-void kernelOutputBasicInfos(char startRowY) // Print informations about the kernel.
-{
-	char string1[31] = "Kernel>MOS's kernel version is ";
-	char mosKernelVersion[5] = MOS_KERNEL_VERSION;
-	kernelOutputGreenString(0,startRowY,string1,31);
-	kernelOutputRedString(31,startRowY,mosKernelVersion,5);
-}
