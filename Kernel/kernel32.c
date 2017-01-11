@@ -5,7 +5,7 @@ Purpose:
 This is the kernel's main entry point.
 */
 #include "mos_kernel32_basic.h"
-void printInitMessages() // Print basic infos.
+void kmain() // Kernel's main entry point.
 {
 	char string1[28] = "Kernel>MOS's kernel loaded !";
 	char string2[31] = "Kernel>MOS's kernel version is ";
@@ -15,9 +15,5 @@ void printInitMessages() // Print basic infos.
 	kernelOutputGreenString(0,4,string2,31);
 	kernelOutputRedString(31,4,mosKernelVersion,5);
 	kernelOutputGreenString(0,5,string3,39);
-}
-void kmain() // Kernel's main entry point.
-{
-	printInitMessages();
 	while(1){}; // Infinite loop.
 }
