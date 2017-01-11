@@ -8,9 +8,12 @@ This is the kernel's main entry point.
 void kmain() // Kernel's main entry point.
 {
 	char string1[28] = "Kernel>MOS's kernel loaded !";
-	char string2[39] = "Kernel>MOS is waiting for something ...";
+	char string2[31] = "Kernel>MOS's kernel version is ";
+	char mosKernelVersion[5] = MOS_KERNEL_VERSION;
+	char string3[39] = "Kernel>MOS is waiting for something ...";
 	kernelOutputGreenString(0,3,string1,28);
-	kernelOutputBasicInfos(4);
-	kernelOutputGreenString(0,5,string2,39);
+	kernelOutputGreenString(0,4,string2,31);
+	kernelOutputRedString(31,4,mosKernelVersion,5);
+	kernelOutputGreenString(0,5,string3,39);
 	while(1){}; // Infinite loop.
 }
