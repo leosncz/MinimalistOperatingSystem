@@ -5,7 +5,7 @@ Purpose:
 This file contains datas and functions the kernel might uses.
 */
 #define RAMSCREEN 0xB8000 // Video address.
-#define MOS_KERNEL_VERSION "ALPHA"
+#define MOS_KERNEL_VERSION "ALPHA" // Must contains five characters. For example if version is 1.0 : #define MOS_KERNEL_VERSION "1.000"
 void kernelOutputWhiteCharacter(char colX, char rowY, char characterToPrint) // It prints a white character at I(colX;rowY).
 {
 	unsigned char *video = (unsigned char*)RAMSCREEN+2*(rowY*80+colX);
@@ -74,4 +74,12 @@ void clearScreen() // It clears the screen.
 		video[i]=0xF; // White on black attribute.
 		i++;
 	}
+}
+
+void kernelOutputBasicInfos(char startRowY) // Print informations about the kernel.
+{
+	char string1[31] = "Kernel>MOS's kernel version is ";
+	char mosKernelVersion[5] = MOS_KERNEL_VERSION;
+	kernelOutputGreenString(0,startRowY,string1,31);
+	kernelOutputRedString(31,startRowY,mosKernelVersion,5);
 }
