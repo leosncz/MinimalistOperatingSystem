@@ -16,16 +16,6 @@ If you're under Windows, you can use [HxD editor](https://mh-nexus.de/en/hxd/), 
 I used [nasm](http://www.nasm.us/) to produce binary code, all the assembler parts of **MOS** are written in **nasm** syntax.</br>
 Of course, [gcc](http://www.mingw.org/) suite (Windows version) is needed in order to compile and link everything.</br>
 To finish with, I also like [QEMU](http://wiki.qemu.org/Main_Page) to test binary codes.
-## Basic commands 
-Build with **nasm** : (must use **nasm** syntax)
-```batch
-nasm -f bin yourFile.asm -o binary_code
-```
-Copy bootloader with **dd** :
-```batch
-dd if=binary_code of=disk: count=1 bs=512 seek=0
-```
-The **count** and **bs** parameters may vary.
 ## File encoding
 **NASM** require **utf-8 without BOM**'s file encoding.
 ## Version
