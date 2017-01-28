@@ -77,6 +77,51 @@ void kernelOutputRedString(char colX, char rowY, char string[],int size) // It p
 	}
 }
 
+void kernelOutputGreenLine(char colX,char rowY, int width)
+{
+	int i = 0;
+	unsigned char *video = (unsigned char*)RAMSCREEN+2*(rowY*80+colX);
+	while(i!=width)
+	{
+		*video=' ';
+		video++;
+		*video=0x2A; // Green on green attribute.
+		updateCursor(rowY,colX);
+		i=i+1;
+		video++;
+	}
+}
+
+void kernelOutputRedLine(char colX,char rowY, int width)
+{
+	int i = 0;
+	unsigned char *video = (unsigned char*)RAMSCREEN+2*(rowY*80+colX);
+	while(i!=width)
+	{
+		*video=' ';
+		video++;
+		*video=0x4C; // Red on red attribute.
+		updateCursor(rowY,colX);
+		i=i+1;
+		video++;
+	}
+}
+
+void kernelOutputWhiteLine(char colX,char rowY, int width)
+{
+	int i = 0;
+	unsigned char *video = (unsigned char*)RAMSCREEN+2*(rowY*80+colX);
+	while(i!=width)
+	{
+		*video=' ';
+		video++;
+		*video=0x7F; // White on white attribute.
+		updateCursor(rowY,colX);
+		i=i+1;
+		video++;
+	}
+}
+
 void clearScreen() // It clears the screen.
 {
 	unsigned char *video = (unsigned char*)RAMSCREEN;
