@@ -4,7 +4,7 @@ Author: leosncz
 Purpose:
 Contains low level functions.
 */
-void outb(unsigned int portToWrite,unsigned char whatToPrint)
+void outb(unsigned int portToWrite, unsigned char whatToPrint)
 {
   asm volatile("outb %%al,%%dx": :"d" (portToWrite), "a" (whatToPrint));
 }
