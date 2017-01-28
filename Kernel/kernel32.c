@@ -13,7 +13,7 @@ void kmain() // Kernel's main entry point.
 	char string3[39] = "Kernel>MOS is waiting for something ...";
 	kernelOutputGreenString(0,3,string1,28);
 	kernelOutputGreenString(0,4,string2,27);
-	kernelOutputRedString(31,4,mosKernelVersion,5);
+	kernelOutputRedString(27,4,mosKernelVersion,5);
 	kernelOutputGreenString(0,5,string3,39);
 	while(1){}; // Infinite loop.
 }
