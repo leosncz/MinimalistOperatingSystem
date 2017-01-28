@@ -4,7 +4,7 @@ Author: leosncz
 Purpose:
 This is the kernel's main entry point.
 */
-#include "mos_kernel32_basic.h"
+#include "mos_kernel32_basic.c"
 void kmain() // Kernel's main entry point.
 {
 	char string1[27] = "MOS_Kernel> Kernel loaded !";
