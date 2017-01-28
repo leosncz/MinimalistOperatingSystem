@@ -14,6 +14,6 @@ void outb(unsigned int portToWrite, unsigned char whatToPrint)
 inline unsigned char inb(unsigned int portToRead)
 {
   unsigned char ret;
-  asm volatile ("inb %%dx,%%al":"=a" (ret):"d" (port));
+  asm volatile ("inb %%dx,%%al":"=a" (ret):"d" (portToRead));
   return ret;
 }
