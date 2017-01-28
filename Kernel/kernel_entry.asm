@@ -4,4 +4,6 @@
 [extern _kmain]
 [global _main]
 _main:
-jmp _kmain ; At this point, I prefer jmp instead of call.
+call _kmain
+; When kernel's return is reached (It shouldn't !)
+jmp $
