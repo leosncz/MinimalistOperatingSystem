@@ -1,5 +1,5 @@
 /*
-File: mos_kernel32_basic.h
+File: mos_kernel32_basic.c
 Author: leosncz
 Purpose:
 This file contains datas and functions the kernel might uses.
