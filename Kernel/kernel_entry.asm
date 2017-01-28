@@ -5,5 +5,5 @@
 [global _main]
 _main:
 call _kmain
-; When kernel's return is reached (It shouldn't !)
-jmp $
+; When kernel's return point is reached (It shouldn't !)
+jmp $ ; Loop 
