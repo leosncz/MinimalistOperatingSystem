@@ -4,6 +4,8 @@ Author: leosncz
 Purpose:
 Contains low level functions.
 */
+#ifndef MOS_LOW_LEVEL_C
+#define MOS_LOW_LEVEL_C
 #define CRT_PORT_DATA 0x3D5
 #define CRT_PORT_INDEX 0x3D4
 void outb(unsigned int portToWrite, unsigned char whatToPrint)
@@ -17,3 +19,4 @@ inline unsigned char inb(unsigned int portToRead)
   asm volatile ("inb %%dx,%%al":"=a" (ret):"d" (portToRead));
   return ret;
 }
+#endif
