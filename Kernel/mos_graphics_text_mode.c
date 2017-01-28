@@ -3,6 +3,7 @@ File: mos_graphics_text_mode.c
 Author: leosncz
 Purpose:
 Text mode graphics stuff.
+/!\ THIS FILE ONLY CONCERNS TEXT MODE.
 */
 #ifndef MOS_GRAPHICS_TXTMODE
 #define MOS_GRAPHICS_TXTMODE
