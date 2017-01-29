@@ -20,7 +20,7 @@ inline unsigned char inb(unsigned int portToRead)
   return ret;
 }
 
-void writeByteToMemory(unsigned char byte,unsigned char *where)
+void writeByteToMemory(char byte,unsigned char *where)
 {
   unsigned char *location = where;
   *location=byte;
@@ -29,7 +29,7 @@ void writeByteToMemory(unsigned char byte,unsigned char *where)
 unsigned char readByteFromMemory(unsigned char* where)
 {
   unsigned char* location = where;
-  unsigned char result = *location;
+  char result = *location;
   return result;
 }
 #endif
