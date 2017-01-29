@@ -19,4 +19,10 @@ inline unsigned char inb(unsigned int portToRead)
   asm volatile ("inb %%dx,%%al":"=a" (ret):"d" (portToRead));
   return ret;
 }
+
+void writeByteToMemory(unsigned char byte,unsigned char *where) // TODO : VERIFY WORKING
+{
+  unsigned char *location = where;
+  *location=byte;
+}
 #endif
