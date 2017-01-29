@@ -7,15 +7,14 @@ This is the kernel's main entry point.
 #include "mos_kernel32_basic.c"
 void kmain() // Kernel's main entry point.
 {
-	char string1[27] = "MOS_Kernel> Kernel loaded !";
-	char string2[30] = "MOS_Kernel> Kernel version is ";
-	char mosKernelVersion[5] = MOS_KERNEL_VERSION;
-	char string3[44] = "MOS_Kernel> MOS is waiting for something ...";
-	clearScreen(); // Clear the screen.
-	// Print ...
-	kernelOutputGreenString(0,0,string1,27);
+	clearScreen(); // Clear the bootloader outputs.
+	char string1[31] = "[KERNEL LOG]MOS Kernel loaded !";
+	char string2[30] = "[KERNEL LOG]Kernel version is ";
+	char string3[5] = MOS_KERNEL_VERSION;
+	char string4[47] = "[KERNEL LOG]Kernel is waiting for something ...";
+	kernelOutputGreenString(0,0,string1,31);
 	kernelOutputGreenString(0,1,string2,30);
-	kernelOutputRedString(30,1,mosKernelVersion,5);
-	kernelOutputGreenString(0,2,string3,44);
-	while(1){}; // Infinite loop.
+	kernelOutputRedString(30,1,string3,5);
+	kernelOutputWhiteString(0,2,string4,47);
+	while(1){}; // Infinite loop (so it does not execute garbage).
 }
