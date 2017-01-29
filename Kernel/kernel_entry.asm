@@ -4,6 +4,6 @@
 [extern _kmain]
 [global _main]
 _main:
-call _kmain
+call _kmain ; Get me to my lovely kernel.
 ; When kernel's return point is reached (It shouldn't !)
 jmp $ ; Loop 
