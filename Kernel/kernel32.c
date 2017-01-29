@@ -16,5 +16,11 @@ void kmain() // Kernel's main entry point.
 	kernelOutputGreenString(0,1,string2,30);
 	kernelOutputRedString(30,1,string3,5);
 	kernelOutputWhiteString(0,2,string4,47);
+	
+	
+	writeByteToMemory('Z',(unsigned char*)RAMSCREEN);
+	writeByteToMemory(0xF,(unsigned char*)RASMSCREEN+1);
+	updateCursor(rowY,colX);
+	
 	while(1){}; // Infinite loop (so it does not execute garbage).
 }
