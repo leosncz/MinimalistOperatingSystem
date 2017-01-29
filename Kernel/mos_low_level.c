@@ -25,4 +25,11 @@ void writeByteToMemory(unsigned char byte,unsigned char *where)
   unsigned char *location = where;
   *location=byte;
 }
+
+unsigned char readByteFromMemory(unsigned char* where)
+{
+  unsigned char* location = where;
+  unsigned char result = *location;
+  return result;
+}
 #endif
