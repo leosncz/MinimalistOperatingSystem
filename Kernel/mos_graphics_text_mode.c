@@ -21,27 +21,24 @@ void updateCursor(int row, int col) // Update the blinking cursor.
 void kernelOutputWhiteCharacter(char colX, char rowY, char characterToPrint) // It prints a white character at I(colX;rowY).
 {
 	unsigned char *video = (unsigned char*)RAMSCREEN+2*(rowY*80+colX);
-	*video=characterToPrint;
-	video=(unsigned char*)(RAMSCREEN+2*(rowY*80+colX))+1;
-	*video=0xF; // White on black attribute.
+	writeByteToMemory(characterToPrint,video);
+	writeByteToMemory(0xF,video+1); // White on black attribute.
 	updateCursor(rowY,colX);
 }
 
 void kernelOutputRedCharacter(char colX, char rowY, char characterToPrint) // It prints a red character at I(colX;rowY).
 {
 	unsigned char *video = (unsigned char*)RAMSCREEN+2*(rowY*80+colX);
-	*video=characterToPrint;
-	video=(unsigned char*)(RAMSCREEN+2*(rowY*80+colX))+1;
-	*video=0xC; // Red on black attribute.
+	writeByteToMemory(characterToPrint,video);
+	writeByteToMemory(0xC,video+1); // Red on black attribute.
 	updateCursor(rowY,colX);
 }
 
 void kernelOutputGreenCharacter(char colX, char rowY, char characterToPrint) // It prints a green character at I(colX;rowY).
 {
 	unsigned char *video = (unsigned char*)RAMSCREEN+2*(rowY*80+colX);
-	*video=characterToPrint;
-	video=(unsigned char*)(RAMSCREEN+2*(rowY*80+colX))+1;
-	*video=0xA; // Green on black attribute.
+	writeByteToMemory(characterToPrint,video);
+	writeByteToMemory(0xA,video+1); // Green on black attribute.
 	updateCursor(rowY,colX);
 }
 
@@ -84,9 +81,9 @@ void kernelOutputGreenLine(char colX,char rowY, int width)
 	unsigned char *video = (unsigned char*)RAMSCREEN+2*(rowY*80+colX);
 	while(i!=width)
 	{
-		*video=' ';
+		writeByteToMemory(' ',video);
 		video++;
-		*video=0x2A; // Green on green attribute.
+		writeByteToMemory(0x2A,video); // Green on green attribute.
 		updateCursor(rowY,colX);
 		i=i+1;
 		video++;
@@ -99,9 +96,9 @@ void kernelOutputRedLine(char colX,char rowY, int width)
 	unsigned char *video = (unsigned char*)RAMSCREEN+2*(rowY*80+colX);
 	while(i!=width)
 	{
-		*video=' ';
+		writeByteToMemory(' ',video);
 		video++;
-		*video=0x4C; // Red on red attribute.
+		writeByteToMemory(0x4C,video); // Red on red attribute.
 		updateCursor(rowY,colX);
 		i=i+1;
 		video++;
@@ -114,9 +111,9 @@ void kernelOutputWhiteLine(char colX,char rowY, int width)
 	unsigned char *video = (unsigned char*)RAMSCREEN+2*(rowY*80+colX);
 	while(i!=width)
 	{
-		*video=' ';
+		writeByteToMemory(' ',video);
 		video++;
-		*video=0x7F; // White on white attribute.
+		writeByteToMemory(0x7F,video); // White on white attribute.
 		updateCursor(rowY,colX);
 		i=i+1;
 		video++;
@@ -131,7 +128,7 @@ void clearScreen() // It clears the screen.
 	{
 		video[i]=' '; // Nothing (space).
 		i++;
-		video[i]=0xF; // White on black attribute.
+		video[i]=0xF;
 		i++;
 	}
 }
