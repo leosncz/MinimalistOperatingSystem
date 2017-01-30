@@ -11,5 +11,8 @@ void writePixelVGA_test()
 {
     unsigned char* location = (unsigned char*)0x0A0000;
     writeByteToMemory(0xF,location);
+    writeByteToMemory(0xF,location+1);
+    writeByteToMemory(0xF,location+2);
+    writeByteToMemory(0xF,location+3);
 }
 #endif
