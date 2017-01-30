@@ -21,6 +21,9 @@ call printIntPrepareNL
 call load2ndSector ; Loads kernel.
 mov si, text3
 call printInt
+; Switch to vga mode.
+mov ax,0x13
+int 0x10
 call setupGDT ; Setup GDT and PMode.
 ; Now we are in PMode.
 jmp 0x8:startPMode
