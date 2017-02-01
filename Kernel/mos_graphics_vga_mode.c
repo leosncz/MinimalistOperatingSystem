@@ -20,20 +20,18 @@ void writePixelVGA(char x, char y, char color)
     writeByteToMemory(color,location + ((320*y) + x));
 }
 
-void writeRightLineVGA(char x, char y, char sizeX, char sizeY, char color)
+void writeRightLineVGA(char x, char y, char sizeX, char color)
 {
     unsigned char* location = (unsigned char*)0x0A0000; // This is the base address.
     for(int i=x;i<sizeX;i++)
     {
-        writeByteToMemory(color,location + ((320*y) + x));
-        if (sizeY > 1)
-        {
-            for(int i=x;i<sizeX;i++)
-            {
-                char newY=sizeY+1;
-                writeByteToMemory(color,location + ((320*newY) + x));
-            }
-        }
+        writePixelVGA(x,y,color); // Write the pixel.
+		x++; // Increment.
     }
+}
+
+void writeSquareVGA(char x, char Y, char sizeXnY, char color) // It's a square so X=Y.
+{
+	// To do ...
 }
 #endif

@@ -11,6 +11,6 @@ void kmain() // Kernel's main entry point.
 	We are in VGA Mode (NOT IN TEXT MODE !).
 	The VGA mode has been set up by our bootloader.
 	*/
-	writeRightLineVGA(5,5,50,5,VGA_COLOR_RED);
+	writeRightLineVGA(5,5,100,VGA_COLOR_RED); // The kernel is loaded !
 	while(1){}; // Infinite loop (so it does not execute other things).
 }
