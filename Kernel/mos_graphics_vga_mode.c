@@ -29,6 +29,15 @@ void writeHorizontalLineVGA(char x, char y, char sizeX, char color)
     }
 }
 
+void writeVerticalLineVGA(char x, char y, char sizeY, char color) // I haven't tested it yet.
+{
+    for(int i=y;i<sizeY;i++)
+    {
+        writePixelVGA(x,y,color); // Write the pixel.
+	y++; // Increment.
+    }
+}
+
 void writeSquareVGA(char x, char Y, char sizeXnY, char color) // It's a square so X=Y.
 {
 	// To do ...
