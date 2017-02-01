@@ -26,7 +26,7 @@ void writeRightLineVGA(char x, char y, char sizeX, char color)
     for(int i=x;i<sizeX;i++)
     {
         writePixelVGA(x,y,color); // Write the pixel.
-		x++; // Increment.
+	x++; // Increment.
     }
 }
 
