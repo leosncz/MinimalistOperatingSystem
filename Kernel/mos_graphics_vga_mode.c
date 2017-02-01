@@ -22,7 +22,6 @@ void writePixelVGA(char x, char y, char color)
 
 void writeRightLineVGA(char x, char y, char sizeX, char color)
 {
-    unsigned char* location = (unsigned char*)0x0A0000; // This is the base address.
     for(int i=x;i<sizeX;i++)
     {
         writePixelVGA(x,y,color); // Write the pixel.
