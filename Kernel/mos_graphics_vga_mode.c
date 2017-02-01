@@ -20,7 +20,7 @@ void writePixelVGA(char x, char y, char color)
     writeByteToMemory(color,location + ((320*y) + x));
 }
 
-void writeRightLineVGA(char x, char y, char sizeX, char color)
+void writeHorizontalLineVGA(char x, char y, char sizeX, char color)
 {
     for(int i=x;i<sizeX;i++)
     {
