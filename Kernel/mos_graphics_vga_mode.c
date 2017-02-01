@@ -28,7 +28,7 @@ void writeRightLineVGA(char x, char y, char sizeX, char sizeY, char color)
         writeByteToMemory(color,location + ((320*y) + x));
         if (sizeY > 1)
         {
-            for(int i=x,i<sizeX;i++)
+            for(int i=x;i<sizeX;i++)
             {
                 char newY=sizeY+1;
                 writeByteToMemory(color,location + ((320*newY) + x));
