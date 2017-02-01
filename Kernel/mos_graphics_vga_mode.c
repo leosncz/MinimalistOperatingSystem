@@ -19,4 +19,21 @@ void writePixelVGA(char x, char y, char color)
     unsigned char* location = (unsigned char*)0x0A0000; // This is the base address.
     writeByteToMemory(color,location + ((320*y) + x));
 }
+
+void writeRightLineVGA(char x, char y, char sizeX, char sizeY, char color)
+{
+    unsigned char* location = (unsigned char*)0x0A0000; // This is the base address.
+    for(int i=x;i<sizeX;i++)
+    {
+        writeByteToMemory(color,location + ((320*y) + x));
+        if (sizeY > 1)
+        {
+            for(int i=x,i<sizeX;i++)
+            {
+                char newY=sizeY+1;
+                writeByteToMemory(color,location + ((320*newY) + x));
+            }
+        }
+    }
+}
 #endif
