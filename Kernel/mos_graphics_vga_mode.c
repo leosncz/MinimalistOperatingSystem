@@ -13,6 +13,7 @@ ONLY VGA MODE graphics stuff.
 #define VGA_COLOR_GREEN 0x2F
 #define VGA_COLOR_WHITE 0xF
 #define VGA_COLOR_GREY 0x18
+#define VGA_COLOR_BLUE 0x35
 /*
 There are 256 colors in total(one byte), feel free to add some colors if you want.
 In VGA mode, the top-left corner represents I(0;0).
