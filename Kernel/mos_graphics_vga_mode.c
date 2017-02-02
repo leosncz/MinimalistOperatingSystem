@@ -33,7 +33,7 @@ void writeHorizontalLineVGA(char x, char y, char sizeX, char color)
     }
 }
 
-void writeVerticalLineVGA(char x, char y, char sizeY, char color) // I haven't tested it yet.
+void writeVerticalLineVGA(char x, char y, char sizeY, char color)
 {
     for(int i=y;i<sizeY;i++)
     {
