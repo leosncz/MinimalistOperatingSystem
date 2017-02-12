@@ -6,4 +6,4 @@
 _main:
 call _kmain ; Get me to my lovely kernel.
 ; When kernel's return point is reached (It shouldn't !)
-jmp $ ; Loop 
+jmp $ ; "Security Loop"
