@@ -12,7 +12,7 @@ void kmain() // Kernel's main entry point.
 	The VGA mode has been set up by our bootloader.
 	*/
 	
-	#if(DEV_STATUS == DEBUG_MODE) // We are in DEBUG mode.
+	#if(DEV_STATUS == DEBUG_MODE) // We are in DEBUG mode(default).
 	#endif
 	
 	#if(DEV_STATUS == RELEASE_MODE) // We are in RELEASE mode.
