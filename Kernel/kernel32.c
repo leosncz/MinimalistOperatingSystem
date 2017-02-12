@@ -18,5 +18,5 @@ void kmain() // Kernel's main entry point.
 	#if(DEV_STATUS == RELEASE_MODE) // We are in RELEASE mode.
 	#endif
 	
-	while(1){}; // Infinite loop (so it does not execute other things).
+	while(1){}; // Infinite loop (so it does not execute garbage).
 }
