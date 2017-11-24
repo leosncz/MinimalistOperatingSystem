@@ -23,5 +23,3 @@ To finish with, I also like [QEMU](http://wiki.qemu.org/Main_Page) to test binar
 **Kernel : ALPHA**
 ## Environment variables
 To run all the provided **.bat** scripts, you MUST add **nasm, dd and gcc's directory** to the **PATH** environment variable.
-## Contact
-If you want to contact me (I don't know why, but if you really want to ...), contact me at **theleosa99.officiel@gmail.com**
