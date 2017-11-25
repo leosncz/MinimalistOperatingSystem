@@ -12,9 +12,9 @@ ONLY TEXT MODE graphics stuff.
 void updateCursor(int row, int col) // Update the blinking cursor.
 {
 	unsigned short position=(row*80) + col;
-	outb(CRT_PORT_INDEX,0x0F); // We wanna modify low part of cursor's position.
+	outb(CRT_PORT_INDEX,0x0F); // We wan't to modify low part of cursor's position.
 	outb(CRT_PORT_DATA,(unsigned char)(position&0xFF)); // We modify low part.
-	outb(CRT_PORT_INDEX,0x0E); // We wanna modify high part of cursor's position.
+	outb(CRT_PORT_INDEX,0x0E); // We wan't to modify high part of cursor's position.
 	outb(CRT_PORT_DATA,(unsigned char )((position>>8)&0xFF)); // We modify high part.
 }
 
