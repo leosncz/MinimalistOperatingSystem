@@ -11,7 +11,7 @@ You can find all the **MOS** sources in this **repository**.</br>
 You can modify **MOS** from itself or from the sources.</br>
 For the moment, **MOS** is designed for developers.(at this time)</br>
 ## Tools
-To edit files and disks, i really like to use [DD](https://fr.wikipedia.org/wiki/Dd_(Unix)), it's powerfull.</br>
+To edit files and disks, i really like to use [DD](https://fr.wikipedia.org/wiki/Dd_(Unix)), it's VERY great.</br>
 If you're under Windows, you can use [HxD editor](https://mh-nexus.de/en/hxd/), it's as powerfull as **DD**.</br>
 I used [nasm](http://www.nasm.us/) to produce binary code, all the assembler parts of **MOS** are written in **nasm** syntax.</br>
 Of course, [gcc](http://www.mingw.org/) suite (Windows version) is needed in order to compile and link everything.</br>
