@@ -18,5 +18,11 @@ void kmain() // Kernel's main entry point.
 	#if(DEV_STATUS == RELEASE_MODE) // We are in RELEASE mode.
 	#endif
 	
-	while(1){}; // Infinite loop (so it does not execute garbage).
+	while(1)
+	{
+		writeHorizontalLineVGA(0, 0, 100, VGA_COLOR_RED);
+		/*
+		If everything is fine, you should be able to see a little red line on the top of your screen.
+		*/
+	}; // Infinite loop (so it does not execute garbage).
 }
