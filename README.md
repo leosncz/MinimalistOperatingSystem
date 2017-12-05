@@ -17,7 +17,7 @@ I used [nasm](http://www.nasm.us/) to produce binary code, all the assembler par
 Of course, [gcc](http://www.mingw.org/) suite (Windows version) is needed in order to compile and link everything.</br>
 To finish with, I also like [QEMU](http://wiki.qemu.org/Main_Page) to test binary codes.
 ## File encoding
-**NASM** require **utf-8 without BOM**.
+**NASM** require **utf-8 without BOM** encoding.
 ## Version
 **Bootloader : ALPHA**</br>
 **Kernel : ALPHA**
