@@ -10,5 +10,6 @@ This file contains datas and functions the kernel might uses.
 #define DEBUG_MODE 0x0
 #define RELEASE_MODE 0x1
 #define DEV_STATUS DEBUG_MODE // You'll have to change it later to RELEASE_MODE.
+// #include "mos_graphics_text_mode.c" Uncomment this line If you wan't to use the text mode.
 #include "mos_graphics_vga_mode.c" 
 #endif
