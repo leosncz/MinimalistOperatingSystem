@@ -2,7 +2,7 @@
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).</br>
 **MOS** is currently in development.</br>
 ## What is MOS ?
-MOS is the acronyme for **Minimalist Operating System**.</br>
+MOS stands for **M**inimalist **O**perating **S**ystem.</br>
 You can find all the **MOS** sources in this **repository**.</br>
 **MOS** is targeted to [8086 family intel processors](https://en.wikipedia.org/wiki/Intel_8086).</br>
 ## Advantages and Disadvantages
