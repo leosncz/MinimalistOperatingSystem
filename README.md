@@ -3,7 +3,7 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
 **MOS** is currently in development.</br>
 ## What is MOS ?
 MOS stands for **M**inimalist **O**perating **S**ystem.</br>
-You can find all the **MOS** sources in this **repository**.</br>
+You can find all the **MOS** sources in this **repository**, included .bat scripts must be run on a Windows platform.</br>
 **MOS** is targeted to [8086 family intel processors](https://en.wikipedia.org/wiki/Intel_8086).</br>
 ## Advantages and Disadvantages
 **MOS**'s meaning is to be fully customizable, from the bootloader to the kernel.</br>
