@@ -1,6 +1,6 @@
 # MOS Operating System
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).</br>
-**MOS** is currently in development.</br>
+As of **march 2021**, **MOS** isn't in active development anymore and will probably never be again !. (or maybe who knows)</br>
 ## What is MOS ?
 MOS stands for **M**inimalist **O**perating **S**ystem.</br>
 You can find all the **MOS** sources in this **repository**, included .bat scripts must be run on a Windows platform.</br>
