@@ -11,7 +11,7 @@ You can modify **MOS** from itself or from the sources.</br>
 **MOS** is designed for developers, the **bootloader** loads the **kernel** which is supposed to be modified to your own personal use.</br>
 For the moment, **MOS** is in early development stage, the bootloader executes the **kmain()** function, but it is empty, you're free to do what you want next.
 ## Example when running actual code
-As you can see below, the actual code support basic writing to screen via easy-to-use functions. (squares, lines, ...) (here the function **writeHorizontalLine(x,y, sizeX, sizeY)** is called).
+As you can see below, the actual code support basic writing to screen via easy-to-use functions. (squares, lines, ...) (here the function **writeHorizontalLine(0,0,100,0)** is called). </br>
 </br>
 ![Example](image.png)
 ## Tools
