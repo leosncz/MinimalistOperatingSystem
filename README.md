@@ -10,6 +10,8 @@ You can find all the **MOS** sources in this **repository**, included .bat scrip
 You can modify **MOS** from itself or from the sources.</br>
 **MOS** is designed for developers, the **bootloader** loads the **kernel** which is supposed to be modified to your own personal use.</br>
 For the moment, **MOS** is in early development stage, the bootloader executes the **kmain()** function, but it is empty, you're free to do what you want next.
+## Example when running actual code
+![Example](image.png)
 ## Tools
 To edit files and disks, i really like to use [DD](https://fr.wikipedia.org/wiki/Dd_(Unix)), it's VERY great.</br>
 If you're under Windows, you can use [HxD editor](https://mh-nexus.de/en/hxd/), it's as powerfull as **DD**.</br>
